@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup modal</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="page">
+        <div class="button large popup-button" data-target="#popup-main">Main Popup</div>
+        <div class="button large popup-button" data-target="#popup-other">Other popup</div>
+    </div>
+
+    <div class="popup " id="popup-main">
+        <div class="popup-overlay popup-button" data-target="#popup-main"></div>
+        <div class="popup-inner">
+            <h2>Welcome to Devjob</h2>
+            <h3>You are here at the right time</h3>
+            <p>We peovide jobs for developers out there that are willing to land their first job</p>
+            <button class="button popup-button" data-target="#popup-main ">Close</button>
+        </div>
+    </div>
+
+    <div class="popup " id="popup-other">
+        <div class="popup-overlay popup-button" data-target="#popup-other"></div>
+        <div class="popup-inner">
+            <h2>The best job finder</h2>
+            <h3>You are here at the right time</h3>
+            <p>We peovide jobs for developers out there that are willing to land their first job</p>
+            <button class="button popup-button" data-target="#popup-other">Close</button>
+        </div>
+    </div>
+        <script src="main.js"></script>
+   
+</body>
+</html>
